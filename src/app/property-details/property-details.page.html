@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Property Details</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content *ngIf="property">
+<!-- <ion-content let data of data> -->
+  <!-- Image -->
+    <img  [src]="property.images?.[0]?.file || 'assets/no-image.png'"/>
+
+  <ion-card>
+
+    <ion-card-header>
+      <ion-card-title>{{ property.title }}</ion-card-title>
+      <ion-card-subtitle>{{ property.city }}</ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content>
+
+      <p>
+        <strong>Price:</strong>
+        {{ property.auction_price }}
+      </p>
+
+      <p>
+        {{ property.description }}
+      </p>
+
+      <ion-button expand="full" color="primary">
+        Contact
+      </ion-button>
+
+    </ion-card-content>
+
+  </ion-card>
+
+</ion-content>
