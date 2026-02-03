@@ -1,0 +1,7 @@
+{
+  "name": "BoliRealEstateApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
